@@ -1,0 +1,21 @@
+<h1><center>New Food</center></h1>
+<%= form_for :food, url: foods_path do |f| %>
+	<p>
+	<%= f.label(:name)%>
+	<%= f.text_field(:name)%>
+	</p>
+
+	<p>
+	<%= f.label(:protein)%>
+	<%= f.text_field(:protein)%>
+	</p>
+
+	<p>
+	<%= f.label(:fat)%>
+	<%= f.text_field(:fat)%>
+	</p>
+
+	<p>
+	<%= f.submit %>
+	</p>
+<% end %>
